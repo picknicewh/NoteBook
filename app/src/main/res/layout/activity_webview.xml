@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <WebView
+       android:id="@+id/webview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/space_x5"
+       android:padding="@dimen/space"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
+      <ImageView
+          android:id="@+id/iv_mback"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/ic_back" />
+      <TextView
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textColor="@color/white"
+          android:textSize="@dimen/ts_large"
+          android:text="每日一语"/>
+      <TextView
+          android:text="往期回顾"
+          android:id="@+id/tv_msubtitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:textSize="@dimen/ts_small"
+          android:layout_centerVertical="true"
+          android:textColor="@color/white" />
+   </RelativeLayout>
+   <LinearLayout
+       android:padding="@dimen/space_x2"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+      <android.support.design.widget.FloatingActionButton
+          android:src="@mipmap/ic_share_daily"
+          app:backgroundTint="@color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="@dimen/space_x2"
+          />
+      <android.support.design.widget.FloatingActionButton
+          android:src="@mipmap/ic_download_daliy"
+          app:backgroundTint="@color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+   </LinearLayout>
+</RelativeLayout>

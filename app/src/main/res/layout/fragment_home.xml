@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_home_top" />
+
+            <LinearLayout
+                android:id="@+id/ll_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_x5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ll_weather"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_weather_image"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/space_x4"
+                        android:layout_height="@dimen/space_x4" />
+                    <TextView
+                        android:id="@+id/tv_temprature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/ts_xxxxx_large" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_x0.5"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_x0.5"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <TextView
+                android:id="@+id/tv_daliy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日记"
+                android:gravity="center"
+                android:drawablePadding="@dimen/space_x0.5"
+                android:drawableTop="@mipmap/ic_daily" />
+
+            <TextView
+                android:id="@+id/tv_pick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="便利贴"
+                android:gravity="center"
+                android:drawablePadding="@dimen/space_x0.5"
+                android:drawableTop="@mipmap/heart3" />
+
+            <TextView
+                android:id="@+id/tv_clock"
+                android:text="闹钟"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawablePadding="@dimen/space_x0.5"
+                android:drawableTop="@mipmap/heart" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_vline"
+                android:drawableRight="@mipmap/ic_share"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:text="每日一语"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <LinearLayout
+                android:id="@+id/ll_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_white"
+                android:padding="@dimen/space_x0.5">
+
+                <ImageView
+                    android:id="@+id/iv_daily_image"
+                    android:layout_width="@dimen/space_x8"
+                    android:layout_height="@dimen/space_x8"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_daily_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space"
+                    android:textSize="@dimen/ts_large" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_vline"
+                android:drawableRight="@mipmap/ic_share"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:text="每日必读"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <LinearLayout
+                android:id="@+id/ll_daily_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_white"
+                android:padding="@dimen/space_x0.5">
+
+                <ImageView
+                    android:id="@+id/tv_daily_read_image"
+                    android:layout_width="@dimen/space_x8"
+                    android:layout_height="@dimen/space_x8"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bg_home_top" />
+
+                <TextView
+                    android:id="@+id/tv_daily_read_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space"
+                    android:text="只要想见的人，就不会再孤身一人了"
+                    android:textSize="@dimen/ts_large" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_mcontent"
+    android:orientation="vertical"
+    android:background="@color/pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:padding="@dimen/space_x0.5"
+            android:background="@drawable/round_light_pink"
+            android:text="2017年9月15日"
+            android:gravity="center"
+            android:drawablePadding="@dimen/space"
+            android:drawableRight="@mipmap/ic_arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_weather_image"
+                android:src="@mipmap/ic_sunny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space"/>
+            <ImageView
+                android:id="@+id/iv_emotion_image"
+                android:src="@mipmap/ic_sad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="@dimen/space_x0.5"
+            android:id="@+id/et_daily"
+            android:background="@color/pink"
+            android:layout_below="@+id/tv_date"
+            android:hint="记录美好..."
+            android:textSize="@dimen/ts_medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"/>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="2014"
+            android:padding="@dimen/space_x0.5"
+            android:background="@drawable/round_light_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true">
+      <LinearLayout
+          android:background="@color/main_bg"
+          android:padding="@dimen/space"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/iv_weather"
+           android:src="@mipmap/ic_weather"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content" />
+          <ImageView
+              android:id="@+id/iv_emotion"
+              android:src="@mipmap/ic_emotion"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content" />
+          <ImageView
+              android:id="@+id/iv_bg"
+              android:src="@mipmap/ic_bg"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content" />
+          <ImageView
+              android:id="@+id/iv_font"
+              android:src="@mipmap/ic_font"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+      <FrameLayout
+          android:background="@color/white"
+          android:visibility="gone"
+          android:id="@+id/fl_mcontent"
+          android:layout_width="match_parent"
+          android:layout_height="180dp"/>
+  </LinearLayout>
+</LinearLayout>

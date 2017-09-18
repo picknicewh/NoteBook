@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/round_white_bg"
+        android:padding="@dimen/space"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_x2"
+        android:layout_marginRight="@dimen/space_x2"
+        android:layout_marginTop="@dimen/space">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_gravity="center"
+            android:text="2017年9月15日 16:00"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:src="@mipmap/ic_sunny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space"/>
+        <ImageView
+            android:id="@+id/iv_emotion"
+            android:src="@mipmap/ic_sad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_content"
+            android:text="这事日记的内容哦，多复制一点点，这事日记的内容哦，多复制一点点这事日记的内容哦，多复制一点点"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_marginLeft="@dimen/space"
+            android:src="@mipmap/ic_secret_image"
+            android:layout_width="@dimen/space_x7"
+            android:layout_height="@dimen/space_x7"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

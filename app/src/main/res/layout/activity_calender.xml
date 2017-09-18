@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wh.kotlinnotebook.ui.calender.CalenderActivity">
+
+    <com.wh.kotlinnotebook.widget.calender.CalenderView
+        android:id="@+id/calender_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+         android:layout_marginTop="@dimen/space"
+        android:padding="@dimen/space"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:background="@color/green"
+            android:layout_width="@dimen/space_x1.5"
+            android:layout_height="@dimen/space_x1.5" />
+        <TextView
+            android:text="安全期"
+            android:layout_marginLeft="@dimen/space_x0.5"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space"
+            android:background="@color/violet"
+            android:layout_width="@dimen/space_x1.5"
+            android:layout_height="@dimen/space_x1.5" />
+        <TextView
+            android:text="排卵期"
+            android:layout_marginLeft="@dimen/space_x0.5"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="@dimen/space"
+            android:background="@color/pink"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/space_x1.5"
+            android:layout_height="@dimen/space_x1.5"  />
+        <TextView
+            android:text="月经期"
+            android:layout_marginLeft="@dimen/space_x0.5"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="@dimen/space"
+            android:background="@color/grey"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/space_x1.5"
+            android:layout_height="@dimen/space_x1.5"  />
+        <TextView
+            android:text="非本月"
+            android:layout_marginLeft="@dimen/space_x0.5"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

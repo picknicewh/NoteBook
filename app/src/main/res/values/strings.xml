@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">小秘密</string>
+    <string name="dialog_waiting">努力加载中....</string>
+    <string name="home">家园</string>
+    <string name="secret">秘密</string>
+    <string name="information">资讯</string>
+    <string name="about">关于</string>
+    <string name="secret_info">祖国医学认为，情志异常是重要的致病因素之一，而精神情绪对月经的影响尤为明显。故经期一定要保持情绪稳定，心情舒畅，避免不良刺激，以防月经不调</string>
+    <string name="secret_info1">女孩大学到了12-14岁，就会出现子宫周期性出血</string>
+</resources>

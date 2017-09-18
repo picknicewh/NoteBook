@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@drawable/round_grey_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.wh.kotlinnotebook.widget.WheelView
+            android:id="@+id/wv_hour"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <com.wh.kotlinnotebook.widget.WheelView
+            android:id="@+id/wv_minute"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:padding="@dimen/space"
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:layout_marginBottom="@dimen/space_x0.5"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@drawable/round_grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text"
+            android:text="唤醒声优："
+            android:textSize="@dimen/ts_large"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ll_sound"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/text"
+            android:padding="@dimen/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_sonic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.wh.kotlinnotebook.widget.CircleImageView
+                android:layout_marginLeft="@dimen/space_x2"
+                android:layout_marginRight="@dimen/space_x2"
+                android:src="@mipmap/ic_song_bg"
+                android:layout_width="@dimen/space_x4"
+                android:layout_height="@dimen/space_x4" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_sonic" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_song"
+            android:layout_below="@+id/ll_sound"
+            android:layout_centerHorizontal="true"
+            android:text="Fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_marginRight="@dimen/space"
+      android:layout_marginLeft="@dimen/space"
+      android:layout_marginBottom="@dimen/space_x0.5"
+      android:background="@drawable/round_grey_bg"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:text="重复："
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ts_large" />
+       <android.support.v7.widget.RecyclerView
+           android:layout_margin="@dimen/space"
+           android:layout_gravity="center"
+           android:id="@+id/rv_week"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@drawable/round_grey_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_x2">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注："
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ts_large" />
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="点击添加备注"
+            android:textColor="@color/minor_text_color"
+            android:textSize="@dimen/ts_medium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:layout_marginRight="@dimen/space"
+        android:layout_marginLeft="@dimen/space"
+        android:padding="@dimen/space_x2"
+        android:background="@drawable/round_grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="允许拖延："
+            android:textSize="@dimen/ts_large"
+            android:textColor="@color/main_text_color"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ToggleButton
+            android:id="@+id/tg_delay"
+            android:layout_width="@dimen/space_x5"
+            android:layout_height="@dimen/space_x2.5"
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"
+            android:background="@drawable/tg_switch_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           />
+    </RelativeLayout>
+</LinearLayout>

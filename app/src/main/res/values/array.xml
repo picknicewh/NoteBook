@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bg_color">
+        <item>@color/pink</item>
+        <item>@color/lightcoral</item>
+        <item>@color/red_main</item>
+        <item>@color/greenyellow</item>
+        <item>@color/wheat</item>
+        <item>@color/deeppink</item>
+        <item>@color/lightseagreen</item>
+        <item>@color/aliceblue</item>
+        <item>@color/violet</item>
+        <item>@color/lightcyan</item>
+        <item>@color/lightpink</item>
+        <item>@color/darkorange</item>
+        <item>@color/blue01</item>
+        <item>@color/yellow02</item>
+    </array>
+    <array name="font_size">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>24</item>
+    </array>
+    <array name="font_color">
+        <item>@color/black</item>
+        <item>@color/grey</item>
+        <item>@color/red_main</item>
+        <item>@color/pink</item>
+        <item>@color/deeppink</item>
+        <item>@color/lightseagreen</item>
+        <item>@color/aliceblue</item>
+        <item>@color/violet</item>
+        <item>@color/lightcyan</item>
+        <item>@color/lightpink</item>
+        <item>@color/darkorange</item>
+        <item>@color/blue01</item>
+        <item>@color/yellow02</item>
+    </array>
+</resources>
+

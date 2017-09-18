@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f6f6f6"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main">
+        <ImageView
+            android:src="@mipmap/ic_main"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_marginTop="@dimen/space"
+            android:text="小秘密"
+            android:textColor="@color/hotpink"
+            android:textSize="@dimen/ts_x_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/space_x2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableLeft="@mipmap/ic_version"
+                android:drawablePadding="@dimen/space"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/space"
+                android:text="v 1.0.0"
+                android:textSize="@dimen/ts_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:drawableLeft="@mipmap/ica_author"
+                android:drawablePadding="@dimen/space"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/space"
+                android:text="作者：王桦"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:drawableLeft="@mipmap/ic_contract_email"
+                android:drawablePadding="@dimen/space"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/space"
+                android:text="联系我们：13735484622"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/space"
+                android:drawableLeft="@mipmap/ic_belief_intro"
+                android:drawablePadding="@dimen/space"
+                android:gravity="center"
+                android:text="简介：小秘密，专注于我们的小秘密。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_above="@+id/main"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_x4"
+        android:src="@mipmap/ic_about_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+     <ImageView
+         android:src="@mipmap/ic_meet"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+</RelativeLayout>

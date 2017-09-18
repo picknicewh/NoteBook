@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_margin="@dimen/space"
+       android:padding="@dimen/space"
+       android:background="@drawable/round_white"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_time"
+               android:text="17:30"
+               style="@style/Base.TextAppearance.AppCompat.Title"
+               android:textSize="34sp"
+               android:textColor="@color/main_text_color"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_weeks"
+               android:text="闹钟/每天"
+               android:textSize="@dimen/ts_large"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+        <ToggleButton
+            android:id="@+id/tg_open"
+            android:layout_gravity="center"
+            android:background="@drawable/tg_switch_btn"
+            android:textOff=""
+            android:textOn=""
+            android:checked="true"
+            android:layout_width="@dimen/space_x5"
+            android:layout_height="@dimen/space_x2.5" />
+   </LinearLayout>
+</RelativeLayout>
